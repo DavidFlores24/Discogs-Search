@@ -9,8 +9,8 @@ import { stringify } from "qs";
  * @returns {Promise<Object>} a promise that resolves to a JSON object with the response
  */
 export const submitSearch = async artist => {
-  const consumerKey = "wPWZllOkxlQrqktIHINH";
-  const secretKey = "nthfaAGluyuHkaXDaGYWVFYzSKDfkeCf";
+  const consumerKey = "";
+  const secretKey = "";
   const baseUri = "https://api.discogs.com";
 
   const query = {
