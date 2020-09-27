@@ -8,9 +8,12 @@ import styles from "./artistList.module.css";
 export const ArtistList = props => {
   const mapArtists = artists =>
     artists.map(artist => {
-      debugger;
       return (
-        <NavLink className={styles.link} to={artist.uri} exact={false}>
+        <NavLink
+          className={styles.link}
+          to={`artist?id=${artist.id}`}
+          exact={false}
+        >
           <div className={styles.artist}>
             <div className={styles.name}>{artist.title}</div>
           </div>
