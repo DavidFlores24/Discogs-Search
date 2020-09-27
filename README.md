@@ -6,7 +6,7 @@ This is a small project that uses the Discogs API to find artists and display th
 
 To run use yarn `run start`
 
-## To run Locally
+## To run Locally
 
 Create a file called `config.js` under `src/API`
 On this file export a config object that follows this format:
