@@ -1,3 +1,17 @@
-.App {
-  text-align: center;
+:root {
+  --maing-bg-colour: #1a1a1a;
+  --primary-colour: #0ead69;
+  --secondary-colour: #ffd23f;
+
+  --main-highlight-colour: #ee4266;
+  --second-highlight-colour: #3bceac;
+
+  --main-font-colour: #fff;
+
+  /** Search Page */
+  --input-border-colour: #d8d4d5;
+}
+
+body {
+  background-color: var(--maing-bg-colour);
 }
