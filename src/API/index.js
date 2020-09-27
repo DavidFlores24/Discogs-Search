@@ -1,0 +1,1 @@
+export { submitSearch } from "./submitSearch";
