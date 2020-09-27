@@ -1,7 +1,7 @@
 import "fetch";
-import "dotenv";
-
 import { stringify } from "qs";
+
+import { config } from "./config";
 
 /**
  * submit the search with the artist to the Discogs API
@@ -9,9 +9,7 @@ import { stringify } from "qs";
  * @returns {Promise<Object>} a promise that resolves to a JSON object with the response
  */
 export const submitSearch = async artist => {
-  const consumerKey = "";
-  const secretKey = "";
-  const baseUri = "https://api.discogs.com";
+  const { consumerKey, secretKey, baseUri } = config;
 
   const query = {
     q: artist,
