@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { SearchInput } from "../../Components";
+import { SearchInput, ArtistList } from "../../Components";
 
 import { submitSearch } from "../../API";
 
@@ -22,19 +22,23 @@ export class Search extends Component {
 
     // submit the search only when the input has 3 or more characters
     if (query.length >= 3) {
-      this.setState({
-        query: query
-      });
-
       const res = await submitSearch(query);
-      console.log(res);
+      this.setState({
+        query: query,
+        artistList: res.results
+      });
     }
   }
 
   render() {
     return (
       <div className={styles.container}>
-        <SearchInput keyup={this.onKeyUp} />
+        <div className={styles.input}>
+          <SearchInput keyup={this.onKeyUp} />
+        </div>
+        <div className={styles.list}>
+          <ArtistList artists={this.state.artistList} />
+        </div>
       </div>
     );
   }

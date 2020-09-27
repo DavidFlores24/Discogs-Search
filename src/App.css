@@ -7,6 +7,8 @@
   --second-highlight-colour: #3bceac;
 
   --main-font-colour: #fff;
+  --main-font-weight: 600;
+  --main-font-size: 1.25vw;
 
   /** Search Page */
   --input-border-colour: #d8d4d5;
@@ -14,4 +16,8 @@
 
 body {
   background-color: var(--maing-bg-colour);
+
+  font-weight: var(--main-font-weight);
+  font-size: var(--main-font-size);
+  color: var(--main-font-colour);
 }
