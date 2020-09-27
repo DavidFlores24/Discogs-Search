@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import { Search } from "./Routes";
+import { Artist, Search } from "./Routes";
 
 import "./App.css";
 
@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
+          <Route path="/artist" component={Artist} />
           <Route path="/" component={Search} />
         </Switch>
       </BrowserRouter>
